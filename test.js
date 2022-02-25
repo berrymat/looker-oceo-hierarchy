@@ -23,7 +23,7 @@ looker.plugins.visualizations.add({
   },
   updateAsync: function (data, element, config, queryResponse, details, done) {
     // Grab the first cell of the data.
-    var firstRow = data[0];
+    var firstRow = data[1];
     var firstCell = firstRow[queryResponse.fields.dimensions[0].name];
 
     // Insert the data into the page.
